@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <style>
+        /* Base styles for the whole page */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .bucket-list h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        /* Bucket List Styling */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 0;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        li .icon {
+            margin-right: 1rem;
+            font-size: 2rem;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        /* Hover effects for the list items */
+        li:hover {
+            background-color: #e0ffe0; /* Light green background on hover */
+            transform: scale(1.05); /* Slight scaling effect */
+        }
+
+        /* Hover effects for the icons */
+        li .icon:hover {
+            color: #FF6347; /* Change icon color to Tomato on hover */
+            transform: rotate(20deg); /* Add slight rotation to the icon */
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .bucket-list h2 {
+                font-size: 2rem;
+            }
+
+            li {
+                font-size: 1.2rem;
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Bucket List</h1>
+        <p>Things I want to do before I kick the bucket!</p>
+    </header>
+
+    <main>
+        <section class="bucket-list">
+            <h2>My Bucket List</h2>
+            <ul>
+                <li><span class="icon">✔️</span> Visit Japan</li>
+                <li><span class="icon">✔️</span> Skydiving</li>
+                <li><span class="icon">⭐</span> Learn to play guitar</li>
+                <li><span class="icon">✔️</span> Run a marathon</li>
+                <li><span class="icon">⭐</span> Write a novel</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>created by pradeep </p>
+    </footer>
+</body>
+</html>
